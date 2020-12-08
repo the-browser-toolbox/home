@@ -1,11 +1,11 @@
 import React from 'react'
-import Top from './sections/top'
+import Sections from './sections'
 
 function App() {
   return (
-    <div>
-     <Top/>
-    </div>
+  
+     <Sections/>
+  
   );
 }
 
