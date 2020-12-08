@@ -1,6 +1,14 @@
 import { createMuiTheme } from "@material-ui/core/";
-
+import {lightBlue} from '@material-ui/core/colors';
 const theme = createMuiTheme({
+  
+    palette: {
+      primary: {
+        // Purple and green play nicely together.
+        main: lightBlue[500],
+      },
+    },
+  
   typography: {
     fontFamily: "Segoe UI",
     h2: {
@@ -8,7 +16,8 @@ const theme = createMuiTheme({
     },
     h3: {
       fontSize: "24px",
-      fontFamily: "Segoe UI"
+      fontFamily: "Segoe UI",
+      fontWeight: "10"
     },
     h4: {
       fontSize: "22px",
