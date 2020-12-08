@@ -4,7 +4,7 @@ const theme = createMuiTheme({
   typography: {
     fontFamily: "Segoe UI",
     h2: {
-      fontSize: "33px"
+      fontSize: "43px"
     },
     h3: {
       fontSize: "24px",
