@@ -7,7 +7,8 @@ const useStyles = makeStyles((theme) => ({
         background: '#252323',
         color: 'white',
         paddingTop: '25px',
-        paddingBottom: '125px'
+        paddingBottom: '125px',
+        paddingLeft:"4px"
     },
     headPadding: {
         marginBottom: '32px'
@@ -24,7 +25,7 @@ const Middle = () => {
         <>
             <Grid className={classes.root}>
                 <Container>
-                    < Grid container spacing={3}>
+                    < Grid container >
                         <Grid item xs={12} sm={12} md={12} lg={12} >
                             <Typography className={classes.headPadding} gutterBottom={true} variant="h3">
                                 Personalization for web browsers
@@ -35,7 +36,7 @@ const Middle = () => {
                                 Browser extensions are very powerful tools to enhance
                               the browsing experience.<br />We at <b> “The Browser ToolBox” </b>,
                              build super cool Open Source Browser Extensions to make lives easier.
-                             <br />
+                             <br /><br/>
                             </Typography>
                         </Grid>
                         <Grid container spacing={4}>
@@ -56,7 +57,7 @@ const Middle = () => {
                                     href="https://gitter.im/the-browser-toolbox/community"
                                     variant="outlined"
                                     target="_blank"
-                                    color="primary"
+                                    color="secondary"
                                     rel="noopener noreferrer"
                                 >
                                     Join the Channel
