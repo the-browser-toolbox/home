@@ -1,6 +1,8 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core";
 import PropTypes from "prop-types";
+import { motion } from 'framer-motion'
+import variants from '../../data/animVariant'
 import {
   Typography,
   Card,
@@ -10,6 +12,7 @@ import {
 
   Button
 } from "@material-ui/core";
+
 
 const useStyles = makeStyles({
   root: {
@@ -24,6 +27,11 @@ const Holder = (props) => {
   const classes = useStyles();
 
   return (
+      <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={variants}
+      transition={{ duration: 1 }}>
     <Card className={classes.root}>
       <CardActionArea>
      
@@ -54,7 +62,7 @@ const Holder = (props) => {
           SEE ISSUES
         </Button>
       </CardActions>
-    </Card>
+    </Card></motion.div>
   );
 };
 Holder.propTypes = {

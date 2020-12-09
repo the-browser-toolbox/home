@@ -3,6 +3,7 @@ import { Typography, Grid, Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/";
 import { motion } from "framer-motion";
 import BTN from '../../components/buttons'
+import variants from '../../data/animVariant'
 import Links from '../../data/Links'
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -24,7 +25,13 @@ const useStyles = makeStyles((theme) => ({
 const Middle = () => {
     const classes = useStyles();
     return (
-        <>
+        <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={variants}
+        transition={{ duration: 0.8 }}
+        
+        >
             <Grid className={classes.root}>
                 <Container>
                     < Grid container >
@@ -64,6 +71,6 @@ const Middle = () => {
 
                 </Container>
             </Grid>
-        </>)
+        </motion.div>)
 }
 export default Middle;

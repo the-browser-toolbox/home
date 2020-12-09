@@ -1,6 +1,7 @@
 import React from 'react';
 import { Typography, Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/";
+import variants from '../../data/animVariant'
 import { motion } from "framer-motion";
 import Logo from './assets/logo.svg'
 const useStyles= makeStyles((theme)=>({
@@ -17,7 +18,12 @@ const useStyles= makeStyles((theme)=>({
 const Top = () => {
     const classes = useStyles();
     return (<center>
-    <motion.div className={classes.root}>
+    <motion.div
+    initial="hidden"
+    animate="visible"
+    variants={variants}
+    transition={{ duration: 1 }}
+    className={classes.root}>
      
         <Grid container>
             <Grid item xs={12} sm={12} md={12} lg={12} gutterBottom={true}>
