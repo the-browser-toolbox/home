@@ -3,13 +3,13 @@ import { Typography, Grid, Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/";
 import { motion } from "framer-motion";
 import { useRepo } from '../../hooks/github';
-
+import Project from '../../components/holder/'
 const useStyles = makeStyles((theme) => ({
     root: {
-       paddingBottom:'25px',
-        paddingTop:'22px',
-        background:'#939191',
-        color:'white'
+        paddingBottom: '25px',
+        paddingTop: '22px',
+        background: '#939191',
+        color: 'white'
     },
     imagePadding: {
 
@@ -28,8 +28,18 @@ const Bottom = () => {
                     <Grid item xs={12} sm={12} md={12} lg={12}>
                         <Typography gutterBottom={true} textAlign="center" variant="h2">
                             Extensions
-                </Typography>
-                        {repos.map((item, index) => (<Typography>{item.name}</Typography>))}
+                        </Typography>
+                        <Grid container spacing={3}>
+                            {repos.map((item, index) => (
+                                <Grid item xs={12} sm={12} md={4} lg={4}>
+                                    <Project name={item.name} 
+                                    desc={item.description}
+                                     github={item.github}
+                                     issues={item.issueUrl}
+                                     />
+                                </Grid>
+                            ))}
+                        </Grid>
                     </Grid>
                 </Container>
             </Grid>

@@ -45,7 +45,14 @@ const Holder = (props) => {
         >
           GitHub
         </Button>
-      
+        <Button
+          target="_blank"
+          href={props.issues}
+          size="small"
+          rel="noopener noreferrer"
+        >
+          SEE ISSUES
+        </Button>
       </CardActions>
     </Card>
   );
