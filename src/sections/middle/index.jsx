@@ -1,8 +1,9 @@
 import React from 'react';
-import { Typography, Grid, Container} from "@material-ui/core";
+import { Typography, Grid, Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/";
 import { motion } from "framer-motion";
 import BTN from '../../components/buttons'
+import Links from '../../data/Links'
 const useStyles = makeStyles((theme) => ({
     root: {
         background: '#252323',
@@ -41,16 +42,16 @@ const Middle = () => {
                             </Typography>
                         </Grid>
                         <Grid container spacing={4}>
-                            <Grid classname={classes.buttonMargin} item xs={12} sm={12} md={3} lg={3} >
+                            <Grid classname={classes.buttonMargin} item xs={12} sm={12} md={2} lg={2} >
                                 <BTN
-                                    name="Contribute on GitHub"
-                                    link="https://github.com/the-browser-toolbox"
+                                    name="Fork on GitHub"
+                                    link={Links.github}
                                     color="primary"
                                 />
                             </Grid>
-                            <Grid classname={classes.buttonMargin} item xs={12} sm={12} md={9} lg={9} >
+                            <Grid classname={classes.buttonMargin} item xs={12} sm={12} md={10} lg={10} >
                                 <BTN
-                                    link="https://gitter.im/the-browser-toolbox/community"
+                                    link={Links.Gitter}
                                     name=" Join the Channel"
                                     color="secondary"
                                 />
