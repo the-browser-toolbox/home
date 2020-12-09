@@ -21,14 +21,12 @@ const useRepo = () => {
         let P = Promise.all(own_repo.map(async (el) => {
             
             let d = {
-                created: el.created_at,
                 name: el.name,
-                language: el.language,
                 issueCount: el.open_issues,
-                stars: el.stargazers_count,
                 description: el.description,
                 issueUrl: el.html_url + '/issues',
                 id:el.id,
+                github:el.git_url
             }
 
             return d
