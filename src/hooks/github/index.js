@@ -26,7 +26,7 @@ const useRepo = () => {
                 description: el.description,
                 issueUrl: el.html_url + '/issues',
                 id:el.id,
-                github:el.git_url
+                github:el.html_url
             }
 
             return d
