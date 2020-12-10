@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Logo from './assets/logo.svg'
 const useStyles= makeStyles((theme)=>({
     root:{
-        marginTop:'18%',
+        marginTop:'6%',
         marginBottom:'20px'
     },
     imagePadding:{

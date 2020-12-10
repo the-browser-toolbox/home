@@ -9,8 +9,8 @@ const useStyles = makeStyles((theme) => ({
     root: {
         background: '#252323',
         color: 'white',
-        paddingTop: '25px',
-        paddingBottom: '125px',
+        paddingTop: '80px',
+        paddingBottom: '80px',
         paddingLeft: "4px"
     },
     headPadding: {
