@@ -36,7 +36,7 @@ const Top = () => {
             </Grid>
             <Grid item xs={12} sm={12} md={12} lg={12}>
                 <Typography gutterBottom={true} textAlign="center" variant="body2">
-               Nobody does it better!<br/> Extensions do make life easier
+                        A curated collection of browser extensions to make your browsing smoother 🚀
                 </Typography>
             </Grid>
         </Grid>

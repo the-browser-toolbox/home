@@ -44,7 +44,7 @@ const Middle = () => {
                             <Typography gutterBottom={true} variant="body2">
                                 Browser extensions are very powerful tools to enhance
                               the browsing experience.<br />We at <b> “The Browser ToolBox” </b>,
-                             build super cool Open Source Browser Extensions to make lives easier.
+                             build super cool Open Source Browser Extensions to make managing tasks easier.
                              <br /><br />
                             </Typography>
                         </Grid>
