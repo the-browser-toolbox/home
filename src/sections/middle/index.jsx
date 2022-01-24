@@ -7,7 +7,7 @@ import variants from '../../data/animVariant'
 import Links from '../../data/Links'
 const useStyles = makeStyles((theme) => ({
     root: {
-        background: '#252323',
+        background: 'linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)',
         color: 'white',
         paddingTop: '80px',
         paddingBottom: '80px',
@@ -53,7 +53,7 @@ const Middle = () => {
                                 <BTN
                                     name="Fork on GitHub"
                                     link={Links.github}
-                                    color="primary"
+                                    color="secondary"
                                 />
                             </Grid>
                             <Grid classname={classes.buttonMargin} item xs={12} sm={12} md={10} lg={10} >
