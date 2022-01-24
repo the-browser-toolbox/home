@@ -1,6 +1,8 @@
 # Home
 `127.0.0.1` for **The Browser Toolbox** 🏡
 
+The project is now [live!](https://browser-toolbox-home.herokuapp.com/)
+
 ## Documentation
 
 Documentation for `the browser toolbox` : https://bit.ly/3pKDGvl
